@@ -63,8 +63,8 @@ COPY kalypso-listener ./
 RUN chmod +x kalypso-listener
 
 # generator-used for generating zkproof
-COPY zkbob_generator ./
-RUN chmod +x zkbob_generator
+# COPY zkbob_generator ./
+# RUN chmod +x zkbob_generator
 
 # generator-used for generating avail proof
 COPY avail-prover-demo ./
