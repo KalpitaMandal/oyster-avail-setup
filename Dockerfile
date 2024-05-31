@@ -48,7 +48,15 @@ RUN chmod +x setup.sh
 COPY generator-client ./
 RUN chmod +x generator-client
 
-COPY test_inputs.json ./
+COPY config.json ./
+
+COPY fees.txt ./
+
+COPY helper.txt ./
+
+COPY multi_txn_t1.txt ./
+
+COPY test_hello.txt ./
 
 # generator-us
 COPY kalypso-listener ./
@@ -57,6 +65,10 @@ RUN chmod +x kalypso-listener
 # generator-used for generating zkproof
 COPY zkbob_generator ./
 RUN chmod +x zkbob_generator
+
+# generator-used for generating avail proof
+COPY avail-prover-demo ./
+RUN chmod +x avail-prover-demo
 
 # entry point
 ENTRYPOINT [ "/app/setup.sh" ]

@@ -16,6 +16,11 @@ zkbob-generator:
 	@cd dependencies/zkbob-generator && cargo build --release
 	@cp dependencies/zkbob-generator/target/release/zkbob-generator zkbob-generator 
 
+avail-prover-demo:
+	@echo "Building avail-prover-demo... "
+	@cd dependencies/avail-prover-demo && cargo build --release
+	@cp dependencies/Avail-prover-demo/target/release/avail-prover-demo avail-prover-demo
+
 oyster-attestation-utility:
 	@echo "Building oyster-attestation-utility... "
 	@cd dependencies/oyster-attestation-server-secp256k1 && cargo build --release
@@ -38,5 +43,5 @@ pull-repo:
 
 .PHONY: clean
 clean:
-	@rm -f zkbob-generator generator-client kalypso-listener oyster-attestation-utility
+	@rm -f zkbob-generator generator-client kalypso-listener oyster-attestation-utility avail-prover-demo
 	@rm -rf dependencies
