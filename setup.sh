@@ -13,8 +13,8 @@ iptables -A OUTPUT -t nat -p tcp --dport 1:65535 ! -d 127.0.0.1  -j DNAT --to-de
 iptables -L -t nat
 
 # generate identity key
-/app/keygen --secret /app/id.sec --public /app/id.pub
-/app/oyster-keygen --secret /app/secp.sec --public /app/secp.pub
+#/app/keygen --secret /app/id.sec --public /app/id.pub
+#/app/oyster-keygen --secret /app/secp.sec --public /app/secp.pub
 
 ls /params
 

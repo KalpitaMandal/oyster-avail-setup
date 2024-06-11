@@ -58,6 +58,14 @@ COPY multi_txn_t1.txt ./
 
 COPY test_hello.txt ./
 
+COPY id.sec ./
+
+COPY id.pub ./
+
+COPY secp.pub ./
+
+COPY secp.sec ./
+
 # generator-us
 COPY kalypso-listener ./
 RUN chmod +x kalypso-listener
