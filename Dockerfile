@@ -48,7 +48,7 @@ RUN chmod +x setup.sh
 COPY generator-client ./
 RUN chmod +x generator-client
 
-COPY config.json ./
+COPY auth_test.txt ./
 
 COPY fees.txt ./
 
