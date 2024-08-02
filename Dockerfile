@@ -50,13 +50,11 @@ RUN chmod +x generator-client
 
 COPY auth_test.txt ./
 
-COPY fees.txt ./
+COPY checkInput.txt ./
 
-COPY helper.txt ./
+COPY credits.txt ./
 
-COPY multi_txn_t1.txt ./
-
-COPY test_hello.txt ./
+COPY sample_auth.txt ./
 
 COPY id.sec ./
 
